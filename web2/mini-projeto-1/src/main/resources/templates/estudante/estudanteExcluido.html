@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Estudante Excluído</title>
+</head>
+
+<body>
+	<h1>Estudante Excluído:</h1>
+	<p th:text="'Nome: ' + ${estudante.primeiroNome} + ' ' + ${estudante.ultimoNome}"></p>
+	<p th:text="'Id:  ' + ${estudante.id}"></p>
+	<br><br>
+
+	<a th:href="@{/estudante/getListaEstudantes}">Ver lista de estudantes</a><br>
+	<a th:href="@{/estudante/showForm}">Formulário de estudantes</a><br>
+</body>
+
+</html>
